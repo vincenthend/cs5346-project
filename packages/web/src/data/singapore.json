@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Singapore",
+        "ISO_A2": "SG"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.638, 1.227],
+          [103.851, 1.227],
+          [103.851, 1.477],
+          [103.638, 1.477],
+          [103.638, 1.227]
+        ]]
+      }
+    }
+  ]
+} 
