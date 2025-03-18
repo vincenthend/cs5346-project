@@ -1,41 +1,23 @@
 import { useEffect, useRef } from 'react'
 import 'ol/ol.css'
 import Map from 'ol/Map'
-import View from 'ol/View'
-import TileLayer from 'ol/layer/Tile'
-import OSM from 'ol/source/OSM'
-import { fromLonLat } from 'ol/proj'
 
-function BackgroundMap() {
+interface Props {
+  map: Map
+}
+
+function BackgroundMap(props: Props) {
+  const { map } = props
   const mapRef = useRef<HTMLDivElement>(null)
-  const mapInstance = useRef<Map | null>(null)
 
   useEffect(() => {
-    if (mapRef.current && !mapInstance.current) {
-      // Singapore coordinates
-      const singaporeCoords = fromLonLat([103.8198, 1.3521])
-      
-      // Create the map
-      mapInstance.current = new Map({
-        target: mapRef.current,
-        layers: [
-          new TileLayer({
-            source: new OSM()
-          })
-        ],
-        view: new View({
-          center: singaporeCoords,
-          zoom: 12
-        })
-      })
+    if (mapRef.current) {
+      map.setTarget(mapRef.current)
     }
 
     // Cleanup function
     return () => {
-      if (mapInstance.current) {
-        mapInstance.current.setTarget(null)
-        mapInstance.current = null
-      }
+      map.setTarget()
     }
   }, [])
 
