@@ -4,19 +4,17 @@ import Map from 'ol/Map'
 import VectorSource from 'ol/source/Vector'
 import { Circle, Fill, Style } from 'ol/style'
 import React, { useEffect, useRef } from 'react'
-import useTaxiLocationCollection from '../../hooks/useTaxiLocationCollection.ts'
+import useTaxiLocationCollection from './useTaxiLocationCollection.ts'
 
 function useTaxiLocationLayer(map: Map, enabled?: boolean) {
-  const [locations] = useTaxiLocationCollection()
-  const locationLayer = useRef<BaseLayer>()
+  const [locations] = useTaxiLocationCollection(enabled)
+  const mapLayer = useRef<BaseLayer>()
 
   const enable = React.useCallback(() => {
-    const pointStyle = () => {
-      const zoom = map.getView().getZoom() // Get the current zoom level
-
+    const pointStyle = (_, resolution) => {
       return new Style({
         image: new Circle({
-          radius: (zoom ?? 1) / 8,
+          radius: Math.min(20 / resolution, 3),
           fill: new Fill({
             color: '#FFB121',
           }),
@@ -25,17 +23,18 @@ function useTaxiLocationLayer(map: Map, enabled?: boolean) {
     }
 
     if (locations) {
-      locationLayer.current = new Vector({
+      mapLayer.current = new Vector({
         source: new VectorSource({ features: locations }),
         style: pointStyle,
       })
-      map.addLayer(locationLayer.current)
+      map.addLayer(mapLayer.current)
     }
   }, [locations])
 
   const disable = React.useCallback(() => {
-    if (locationLayer.current) {
-      map.removeLayer(locationLayer.current)
+    if (mapLayer.current) {
+      map.removeLayer(mapLayer.current)
+      mapLayer.current = undefined
     }
   }, [])
 

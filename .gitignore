@@ -73,7 +73,7 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
+packages/web/src/constants/env.ts
 .env.development.local
 .env.test.local
 .env.production.local
@@ -137,3 +137,5 @@ dist
 
 .idea/
 .aider*
+
+env.ts

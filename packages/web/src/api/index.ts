@@ -1,7 +1,9 @@
 import Taxi from './taxi.ts'
+import Weather from './weather.ts'
 
 const Apis = {
-  Taxi
+  Taxi,
+  Weather
 }
 
 export default Apis

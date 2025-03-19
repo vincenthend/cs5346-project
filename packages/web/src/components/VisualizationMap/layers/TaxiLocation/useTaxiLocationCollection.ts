@@ -3,13 +3,13 @@ import { Geometry, Point } from 'ol/geom'
 import { fromLonLat } from 'ol/proj'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
-import Apis from '../api'
-import { ApiResponse } from '../types'
-import { TaxiData } from '../types/taxi.ts'
+import Apis from '../../../../api'
+import { ApiResponse } from '../../../../types'
+import { TaxiData } from '../../../../types/taxi.ts'
 
-function useTaxiLocationCollection(): [Collection<Feature<Geometry>>] {
+function useTaxiLocationCollection(enabled?: boolean): [Collection<Feature<Geometry>>] {
   const [locations, setLocations] = useState(new Collection<Feature<Geometry>>())
-  const {data} =  useSWR<ApiResponse<TaxiData>>(Apis.Taxi.getLocations(), {refreshInterval: 30 * 1000})
+  const {data} =  useSWR<ApiResponse<TaxiData>>(enabled && Apis.Taxi.getLocations(), {refreshInterval: 30 * 1000})
 
   useEffect(() => {
     if (data) {

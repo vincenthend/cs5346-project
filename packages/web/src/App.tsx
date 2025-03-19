@@ -1,25 +1,17 @@
-import React from 'react'
+import { ConfigProvider } from 'antd'
 import { SWRConfig } from 'swr'
-import LayerCard from './components/LayerCard'
-import VisualizationMap from './components/VisualizationMap'
-import { LayerToggle, LayerType } from './types'
+import AppContainer from './components/App'
 import { appFetch } from './utils/fetch.ts'
 
-function App() {
-  const [toggle, setToggle] = React.useState<LayerToggle>({ [LayerType.TAXI_LOCATION]: true })
+const THEME = { components: { Layout: { headerHeight: 48, headerPadding: 24 } } }
 
+function App() {
   return (
     <>
       <SWRConfig value={{ fetcher: appFetch }}>
-        <VisualizationMap toggle={toggle} />
-        <LayerCard
-          value={toggle}
-          onChange={(layer, checked) => {
-            setToggle((val) => {
-              return { ...val, [layer]: checked }
-            })
-          }}
-        />
+        <ConfigProvider theme={THEME}>
+          <AppContainer />
+        </ConfigProvider>
       </SWRConfig>
     </>
   )
