@@ -1,0 +1,3 @@
+export default {
+  MAPBOX_TOKEN: 'YOUR_MAPBOX_ACCESS_TOKEN',
+}

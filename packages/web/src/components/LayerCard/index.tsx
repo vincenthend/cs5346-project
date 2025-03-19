@@ -1,22 +1,64 @@
-import { Button, Card, Typography } from "antd";
+import { CarOutlined, CloudOutlined, LineChartOutlined } from '@ant-design/icons'
+import { Card, Col, Row, Switch, Typography } from 'antd'
+import React from 'react'
+import { LayerToggle, LayerType } from '../../types'
 
-function LayerDisplay({onSelect, name, icon}: {onSelect?: (layer: string) => void, name: string, icon: string }) {
-    return <div>
-        <Button onClick={() => onSelect?.(name)} type="text" style={{ display: 'flex', alignItems: 'center', gap: 8, flexDirection: 'column', height: 'fit-content', padding: 8 }}>
-            <div style={{ width: 96, height: 96, backgroundColor: icon, borderRadius: 4 }}></div>
-            <Typography.Text>{name}</Typography.Text>
-        </Button>
-    </div>
+function LayerDisplay({
+  onChange,
+  label,
+  icon,
+  value,
+}: {
+  onChange: (checked: boolean) => void
+  label?: React.ReactNode
+  icon: React.ReactNode
+  value?: boolean
+}) {
+  return (
+    <Row gutter={8} wrap={false}>
+      <Col>{icon}</Col>
+      <Col flex={'auto'}>
+        <Typography.Text>{label}</Typography.Text>
+      </Col>
+      <Col>
+        <Switch value={value} onChange={(checked) => onChange(checked)} />
+      </Col>
+    </Row>
+  )
 }
 
-function LayerCard({ onSelect }: { onSelect?: (layer: string) => void }) {
-  return <Card style={{ position: 'absolute', bottom: 24, right: 16, zIndex: 1000 }} size="small">
-    <div style={{ display: 'flex', flexDirection: 'row', gap: 8 }}>
-        <LayerDisplay onSelect={onSelect} name="Layer 1" icon="#000" />
-        <LayerDisplay onSelect={onSelect} name="Layer 2" icon="#000" />
-        <LayerDisplay onSelect={onSelect} name="Layer 3" icon="#000" />
-    </div>
-  </Card>
+function LayerCard({
+  onChange,
+  value,
+}: {
+  onChange: (layer: string, checked: boolean) => void
+  value: LayerToggle
+}) {
+  const layersData = [
+    { name: LayerType.TAXI_LOCATION, label: 'Taxi Location', icon: <CarOutlined /> },
+    { name: LayerType.WEATHER, label: 'Weather', icon: <CloudOutlined /> },
+    { name: LayerType.DEMAND, label: 'Demand', icon: <LineChartOutlined /> },
+  ]
+
+  return (
+    <Card
+      style={{ position: 'absolute', bottom: 24, right: 16, zIndex: 1000 }}
+      size="small"
+      title={'Layers'}
+    >
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        {layersData.map((layer) => (
+          <LayerDisplay
+            key={layer.name}
+            onChange={(val) => onChange(layer.name, val)}
+            label={layer.label}
+            icon={layer.icon}
+            value={value[layer.name]}
+          />
+        ))}
+      </div>
+    </Card>
+  )
 }
 
 export default LayerCard

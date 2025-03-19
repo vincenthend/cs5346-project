@@ -1,42 +1,17 @@
-import { Heatmap } from 'ol/layer'
-import TileLayer from 'ol/layer/Tile'
-import { fromLonLat } from 'ol/proj'
-import OSM from 'ol/source/OSM'
-import VectorSource from 'ol/source/Vector'
-import View from 'ol/View'
-import { useEffect } from 'react'
-import useMap from '../../hooks/useMap.ts'
-import useTaxiLocationCollection from '../../hooks/useTaxiLocationCollection.ts'
+import { LayerToggle, LayerType } from '../../types'
 import BackgroundMap from '../BackgroundMap'
+import useSingaporeMap from './useSingaporeMap.ts'
+import useTaxiLocationLayer from './useTaxiLocationLayer.ts'
+import './styles.css'
 
-const SINGAPORE_COORDS = fromLonLat([103.8198, 1.3521])
+interface Props {
+  toggle: LayerToggle
+}
 
-function VisualizationMap() {
-  const [map] = useMap({
-    layers: [
-      new TileLayer({
-        source: new OSM(),
-      }),
-    ],
-    view: new View({
-      center: SINGAPORE_COORDS,
-      zoom: 12,
-    }),
-  })
-  const [locations] = useTaxiLocationCollection()
-  useEffect(() => {
-    let locationLayer: Heatmap | undefined
-    if (locations) {
-      locationLayer = new Heatmap({ source: new VectorSource({ features: locations }) })
-      map.addLayer(locationLayer)
-    }
-
-    return () => {
-      if (locationLayer) {
-        map.removeLayer(locationLayer)
-      }
-    }
-  }, [locations])
+function VisualizationMap(props: Props) {
+  const { toggle } = props
+  const [map] = useSingaporeMap()
+  useTaxiLocationLayer(map, toggle[LayerType.TAXI_LOCATION])
 
   return <BackgroundMap map={map} />
 }

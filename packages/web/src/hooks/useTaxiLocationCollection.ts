@@ -9,10 +9,9 @@ import { TaxiData } from '../types/taxi.ts'
 
 function useTaxiLocationCollection(): [Collection<Feature<Geometry>>] {
   const [locations, setLocations] = useState(new Collection<Feature<Geometry>>())
-  const {data} =  useSWR<ApiResponse<TaxiData>>(Apis.Taxi.getLocations())
+  const {data} =  useSWR<ApiResponse<TaxiData>>(Apis.Taxi.getLocations(), {refreshInterval: 30 * 1000})
 
   useEffect(() => {
-    console.log(data)
     if (data) {
       setLocations(() => {
         return new Collection(data.data.locations.map((p) => {
