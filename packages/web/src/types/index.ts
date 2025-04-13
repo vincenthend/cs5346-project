@@ -6,7 +6,7 @@ export interface ApiResponse<T> {
 export enum LayerType {
   TAXI_LOCATION =  'taxi_location',
   WEATHER = 'weather',
-  DEMAND = 'demand',
+  // DEMAND = 'demand',
 }
 
 export type LayerToggle = Partial<Record<LayerType, boolean>>

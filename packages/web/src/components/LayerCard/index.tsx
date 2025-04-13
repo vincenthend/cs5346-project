@@ -37,12 +37,10 @@ function LayerCard({
   const layersData = [
     { name: LayerType.TAXI_LOCATION, label: 'Taxi Location', icon: <CarOutlined /> },
     { name: LayerType.WEATHER, label: 'Weather', icon: <CloudOutlined /> },
-    { name: LayerType.DEMAND, label: 'Demand', icon: <LineChartOutlined /> },
   ]
 
   return (
     <Card
-      style={{ position: 'absolute', bottom: 24, right: 16, zIndex: 1000 }}
       size="small"
       title={'Layers'}
     >

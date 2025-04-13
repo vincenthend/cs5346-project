@@ -25,7 +25,7 @@ function BackgroundMap(props: Props) {
     <div 
       ref={mapRef} 
       style={{ 
-        width: '100vw', 
+        width: '100%',
         height: '100vh', 
         margin: 0, 
         padding: 0 

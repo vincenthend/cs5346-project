@@ -1,26 +1,28 @@
+import { Feature } from 'ol'
+import { Polygon } from 'ol/geom'
 import { LayerToggle, LayerType } from '../../types'
 import BackgroundMap from '../BackgroundMap'
-import useBoundaryLayer from './layers/Boundary/useBoundaryLayer.ts'
-import useDemandLayer from './layers/Demand/useDemandLayer.ts'
 import useSingaporeMap from './layers/SingaporeMap/useSingaporeMap.ts'
-import useTaxiLocationLayer from './layers/TaxiLocation/useTaxiLocationLayer.ts'
-import './styles.css'
+import useTaxiLocationLayer from './layers/TaxiLocation/useTaxiLocationLayer.tsx'
 import useWeatherLayer from './layers/Weather/useWeatherLayer.ts'
+import './styles.css'
 
 interface Props {
   toggle: LayerToggle
+  onSelect: (feature: Feature<Polygon>) => void
 }
 
 function VisualizationMap(props: Props) {
   const { toggle } = props
   const [map] = useSingaporeMap()
-  useBoundaryLayer(map, true)
-  //TODO: Merge these layers
-  useTaxiLocationLayer(map, toggle[LayerType.TAXI_LOCATION])
-  useDemandLayer(map, true)
+  useTaxiLocationLayer(map, toggle[LayerType.TAXI_LOCATION], props.onSelect)
   useWeatherLayer(map, toggle[LayerType.WEATHER])
 
-  return <BackgroundMap map={map} />
+  return (
+    <>
+      <BackgroundMap map={map} />
+    </>
+  )
 }
 
 export default VisualizationMap
