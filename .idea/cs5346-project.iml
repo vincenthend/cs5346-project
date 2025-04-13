@@ -2,7 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Python" name="Python facet">
-      <configuration sdkName="Python 3.13 (Dataviz)" />
+      <configuration sdkName="Python 3.13 virtualenv at D:\Codes\NUS\Dataviz\.venv" />
     </facet>
   </component>
   <component name="NewModuleRootManager">
@@ -11,6 +11,6 @@
     </content>
     <orderEntry type="jdk" jdkName="LangSplat (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Python 3.13 (Dataviz) interpreter library" level="application" />
+    <orderEntry type="library" name="Python 3.13 virtualenv at D:\Codes\NUS\Dataviz\.venv interpreter library" level="application" />
   </component>
 </module>

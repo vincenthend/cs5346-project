@@ -50,6 +50,9 @@ importers:
       antd:
         specifier: ^5.14.1
         version: 5.24.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      chroma-js:
+        specifier: ^3.1.2
+        version: 3.1.2
       ky:
         specifier: ^1.7.5
         version: 1.7.5
@@ -66,6 +69,9 @@ importers:
         specifier: ^2.3.3
         version: 2.3.3(react@18.3.1)
     devDependencies:
+      '@types/chroma-js':
+        specifier: ^3.1.1
+        version: 3.1.1
       '@types/react':
         specifier: ^18.2.56
         version: 18.3.18
@@ -585,6 +591,9 @@ packages:
 
   '@types/babel__traverse@7.20.6':
     resolution: {integrity: sha512-r1bzfrm0tomOI8g1SzvCaQHo6Lcv6zu0EA+W2kHrt8dyrHQxGzBBL4kdkzIS+jBMV+EYcMAEAqXqYaLJq5rOZg==}
+
+  '@types/chroma-js@3.1.1':
+    resolution: {integrity: sha512-SFCr4edNkZ1bGaLzGz7rgR1bRzVX4MmMxwsIa3/Bh6ose8v+hRpneoizHv0KChdjxaXyjRtaMq7sCuZSzPomQA==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -2517,6 +2526,8 @@ snapshots:
   '@types/babel__traverse@7.20.6':
     dependencies:
       '@babel/types': 7.26.9
+
+  '@types/chroma-js@3.1.1': {}
 
   '@types/estree@1.0.6': {}
 

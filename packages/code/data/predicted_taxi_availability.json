@@ -1,7 +1,1302 @@
 [
     {
-        "grid_x": 10362,
+        "grid_x": 10363,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10370,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10370,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10369,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10369,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10369,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10369,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10369,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10368,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10368,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10368,
+        "grid_y": 125,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10365,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10365,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10363,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10368,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10372,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10372,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10372,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10372,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10371,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10371,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10371,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10371,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10370,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10370,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10372,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10373,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10374,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10375,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10376,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
         "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10377,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10378,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10379,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 125,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10380,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 146,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 145,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 126,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10381,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 126,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 144,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 125,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10382,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 145,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 124,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10383,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 142,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 143,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10384,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10385,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 127,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 126,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 128,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10386,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10387,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10388,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10389,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10390,
+        "grid_y": 129,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10392,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10392,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10392,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10392,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10392,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10392,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 140,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 141,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10391,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 136,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 135,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 132,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10394,
+        "grid_y": 137,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 138,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10393,
+        "grid_y": 130,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10398,
+        "grid_y": 134,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10398,
+        "grid_y": 133,
         "taxi_count": 1
     },
     {
@@ -10,269 +1305,89 @@
         "taxi_count": 1
     },
     {
-        "grid_x": 10380,
-        "grid_y": 129,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10390,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 129,
-        "taxi_count": 6
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 137,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10380,
-        "grid_y": 128,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10371,
-        "grid_y": 135,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10371,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 131,
-        "taxi_count": 4
-    },
-    {
-        "grid_x": 10390,
-        "grid_y": 135,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 139,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 127,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 141,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10380,
-        "grid_y": 127,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 132,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10370,
-        "grid_y": 144,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10398,
+        "grid_x": 10397,
         "grid_y": 133,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10398,
-        "grid_y": 134,
-        "taxi_count": 9
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 137,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 130,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10380,
-        "grid_y": 141,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10372,
-        "grid_y": 132,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10396,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10391,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 135,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10380,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 131,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10372,
-        "grid_y": 128,
         "taxi_count": 1
     },
     {
         "grid_x": 10396,
-        "grid_y": 134,
+        "grid_y": 137,
         "taxi_count": 1
     },
     {
-        "grid_x": 10380,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 129,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10390,
-        "grid_y": 139,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 139,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 131,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10390,
-        "grid_y": 133,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10379,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10369,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10398,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
+        "grid_x": 10396,
         "grid_y": 136,
         "taxi_count": 1
     },
     {
-        "grid_x": 10389,
-        "grid_y": 140,
+        "grid_x": 10396,
+        "grid_y": 135,
         "taxi_count": 1
     },
     {
-        "grid_x": 10377,
+        "grid_x": 10396,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10396,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10396,
         "grid_y": 134,
         "taxi_count": 1
     },
     {
-        "grid_x": 10384,
-        "grid_y": 138,
+        "grid_x": 10395,
+        "grid_y": 136,
         "taxi_count": 1
     },
     {
-        "grid_x": 10384,
-        "grid_y": 128,
-        "taxi_count": 12
-    },
-    {
-        "grid_x": 10379,
-        "grid_y": 128,
+        "grid_x": 10395,
+        "grid_y": 135,
         "taxi_count": 1
     },
     {
-        "grid_x": 10379,
-        "grid_y": 129,
+        "grid_x": 10395,
+        "grid_y": 134,
         "taxi_count": 1
     },
     {
-        "grid_x": 10388,
+        "grid_x": 10395,
+        "grid_y": 133,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10395,
+        "grid_y": 131,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10395,
         "grid_y": 137,
-        "taxi_count": 3
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10398,
+        "grid_y": 139,
+        "taxi_count": 1
+    },
+    {
+        "grid_x": 10398,
+        "grid_y": 135,
+        "taxi_count": 88
+    },
+    {
+        "grid_x": 10398,
+        "grid_y": 131,
+        "taxi_count": 6
+    },
+    {
+        "grid_x": 10398,
+        "grid_y": 136,
+        "taxi_count": 45
     },
     {
         "grid_x": 10399,
@@ -280,728 +1395,8 @@
         "taxi_count": 2
     },
     {
-        "grid_x": 10379,
-        "grid_y": 127,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 139,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10377,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 137,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 129,
-        "taxi_count": 5
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 139,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10378,
-        "grid_y": 144,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10369,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 144,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10377,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 127,
-        "taxi_count": 6
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 143,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 142,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10370,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10398,
-        "grid_y": 135,
-        "taxi_count": 24
-    },
-    {
-        "grid_x": 10390,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10377,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10379,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 141,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 143,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10390,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10377,
-        "grid_y": 131,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10370,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10398,
-        "grid_y": 136,
-        "taxi_count": 9
-    },
-    {
-        "grid_x": 10379,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10388,
-        "grid_y": 135,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 139,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 141,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10367,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10392,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10372,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 128,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 139,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 124,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10393,
-        "grid_y": 135,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 133,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10395,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10394,
-        "grid_y": 135,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10381,
-        "grid_y": 144,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 140,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 142,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10393,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 134,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10381,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 137,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 132,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10395,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 136,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 139,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10393,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 128,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 131,
-        "taxi_count": 6
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 137,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10394,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 129,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10394,
-        "grid_y": 132,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 138,
-        "taxi_count": 5
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 127,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 136,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10394,
-        "grid_y": 134,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10394,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 139,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 129,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 126,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 133,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10386,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10396,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 143,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 135,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10395,
-        "grid_y": 136,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10381,
-        "grid_y": 126,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 127,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 133,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10392,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 129,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 135,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 128,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10373,
-        "grid_y": 134,
-        "taxi_count": 4
-    },
-    {
-        "grid_x": 10372,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10380,
-        "grid_y": 144,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 135,
-        "taxi_count": 5
-    },
-    {
-        "grid_x": 10392,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10376,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10383,
-        "grid_y": 130,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10380,
-        "grid_y": 143,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 137,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10395,
-        "grid_y": 137,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10393,
-        "grid_y": 133,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 143,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 136,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10381,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 129,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10374,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10395,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10393,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 137,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 144,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10392,
-        "grid_y": 137,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10381,
-        "grid_y": 128,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10393,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10373,
-        "grid_y": 135,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10395,
-        "grid_y": 135,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10375,
-        "grid_y": 140,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10385,
-        "grid_y": 137,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10382,
-        "grid_y": 145,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10381,
-        "grid_y": 127,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 132,
-        "taxi_count": 4
-    },
-    {
-        "grid_x": 10387,
-        "grid_y": 131,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10399,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10391,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 138,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 131,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10378,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 136,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 130,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10378,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 135,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10378,
-        "grid_y": 129,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 136,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10378,
-        "grid_y": 143,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 135,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 131,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 133,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10377,
-        "grid_y": 142,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10384,
-        "grid_y": 132,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10367,
-        "grid_y": 126,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10377,
-        "grid_y": 143,
-        "taxi_count": 2
-    },
-    {
-        "grid_x": 10378,
-        "grid_y": 134,
-        "taxi_count": 1
-    },
-    {
         "grid_x": 10400,
         "grid_y": 137,
-        "taxi_count": 3
-    },
-    {
-        "grid_x": 10365,
-        "grid_y": 131,
         "taxi_count": 1
-    },
-    {
-        "grid_x": 10400,
-        "grid_y": 138,
-        "taxi_count": 1
-    },
-    {
-        "grid_x": 10389,
-        "grid_y": 137,
-        "taxi_count": 2
     }
 ]

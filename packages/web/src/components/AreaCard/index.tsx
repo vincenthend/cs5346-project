@@ -14,7 +14,7 @@ function AreaCard({ feature }: { feature: Feature<Polygon> }) {
           items={[
             {
               label: 'Selected Area',
-              children: feature.get('Name'),
+              children: feature.get('Description'),
               span: 2,
             },
             {
