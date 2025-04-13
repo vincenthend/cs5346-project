@@ -7,9 +7,12 @@ from tqdm import tqdm
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from torch_geometric.data import Data
-import matplotlib.pyplot as plt
-import json
+import time
+import pandas as pd
 import math
+
+from weather import getRainfallLocations
+from taxi import getTaxiLocations
 
 class STGCN(nn.Module):
     def __init__(self, num_nodes, in_channels, hidden_channels, out_channels, kernel_size=3):
@@ -60,51 +63,40 @@ class STGCN(nn.Module):
         return x[:, -1]  # Return the prediction for the last timestep
 
 
-import os
-import pandas as pd
-from datetime import datetime
-
-
-def read_taxi_data(folder_path):
-    all_taxi_data = []
+def read_taxi_data():
+    locations = getTaxiLocations()
 
     # Iterate through all files in the taxi folder
-    for file_name in os.listdir(folder_path):
-        if file_name.endswith('.csv'):
-            file_path = os.path.join(folder_path, file_name)
-            taxi_data = pd.read_csv(file_path)
-
-            # Convert the 'Timestamp' column to datetime format
-            taxi_data['Timestamp'] = pd.to_datetime(taxi_data['Timestamp'], format='%Y-%m-%d %H:%M:%S')
-
-            all_taxi_data.append(taxi_data)
+    data = []
+    id = 1
+    for location in locations["locations"]:
+        data.append({
+            "Timestamp": pd.to_datetime(time.time(), unit='s'),
+            "Taxi ID": f"{id:05d}",
+            "Longitude": location[0],
+            "Latitude": location[1]
+        })
+        id += 1
 
     # Concatenate all the taxi data
-    return pd.concat(all_taxi_data, ignore_index=True)
+    return pd.DataFrame.from_dict(data)
 
 
 # Function to read and process weather data files, adding a timestamp from the filename
-def read_weather_data(folder_path):
-    all_weather_data = []
+def read_weather_data():
+    weatherdata = getRainfallLocations()
 
-    # Iterate through all files in the weather folder
-    for file_name in os.listdir(folder_path):
-        if file_name.endswith('.csv') and 'rain_data' in file_name:
-            # Extract the timestamp from the file name
-            time_str = file_name.replace('rain_data_', '').replace('.csv', '')
-            time_obj = datetime.strptime(time_str, '%Y-%m-%d_%H-%M-%S')
+    data = []
+    for w in weatherdata:
+        data.append({
+            "Timestamp": pd.to_datetime(time.time(), unit='s'),
+            "Station Name": w['name'],
+            "Rain Value": w['value'],
+            "Station Longitude": w['location'][0],
+            "Station Latitude": w['location'][1]
+        })
 
-            file_path = os.path.join(folder_path, file_name)
-            weather_data = pd.read_csv(file_path)
-            weather_data = weather_data.head(58)
-
-            # Add a new column for the timestamp (parsed from the filename)
-            weather_data['Timestamp'] = time_obj
-
-            all_weather_data.append(weather_data)
-
-    # Concatenate all the weather data
-    return pd.concat(all_weather_data, ignore_index=True)
+    return pd.DataFrame.from_dict(data)
 
 
 # Function to assign a region based on latitude and longitude
@@ -359,7 +351,7 @@ def create_temporal_edges(num_nodes, window_size):
     return edge_index_temporal
 
 
-def create_flow_based_edges(movements, num_nodes, window_size):
+def create_flow_based_edges(timestamp_index, movements, num_nodes, window_size):
     """
     Create flow-based edges from inferred taxi movements between grid cells over time.
 
@@ -377,7 +369,7 @@ def create_flow_based_edges(movements, num_nodes, window_size):
     for movement in movements:
         start_grid = movement['start_grid']
         end_grid = movement['end_grid']
-        t = timestamp_to_index[movement['Timestamp']]  # Map timestamp to index
+        t = timestamp_index[movement['Timestamp']]  # Map timestamp to index
 
         # Check if t + 1 exists in aggregated_data's timestamps
         if t + 1 >= window_size:
@@ -399,7 +391,7 @@ def create_flow_based_edges(movements, num_nodes, window_size):
 
 
 # Modify the graph creation function to support batches of temporal data
-def create_grid_graph_temporal(data, window_size, edge_index_spatial, movements):
+def create_grid_graph_temporal(timestamp_index, data, window_size, edge_index_spatial, movements):
     """
     Create combined spatial, temporal, and flow-based edges for ST-GCN.
 
@@ -418,7 +410,7 @@ def create_grid_graph_temporal(data, window_size, edge_index_spatial, movements)
     edge_index_temporal = create_temporal_edges(num_nodes, window_size)
 
     # Create flow-based edges from inferred movements
-    edge_index_flow, edge_weights_flow = create_flow_based_edges(movements, num_nodes, window_size)
+    edge_index_flow, edge_weights_flow = create_flow_based_edges(timestamp_index, movements, num_nodes, window_size)
 
     spatial_weights = torch.ones(edge_index_spatial.size(1), dtype=torch.float)
     temporal_weights = torch.ones(edge_index_temporal.size(1), dtype=torch.float)
@@ -544,16 +536,14 @@ def infer_taxi_movements(taxi_counts, grid_size):
 
     return movements
 
+model = STGCN(num_nodes=473, in_channels=2, hidden_channels=64, out_channels=1)
+checkpoint = torch.load('checkpoint.pth')  # Replace with the actual checkpoint path
+model.load_state_dict(checkpoint['model_state_dict'])
 
-if __name__ == "__main__":
-    model = STGCN(num_nodes=473, in_channels=2, hidden_channels=64, out_channels=1)
-    checkpoint = torch.load('checkpoint.pth')  # Replace with the actual checkpoint path
-    model.load_state_dict(checkpoint['model_state_dict'])
+def predict_demand():
+    taxi_data = read_taxi_data()
+    weather_data = read_weather_data()
 
-    taxi_folder = './taxi/'
-    weather_folder = './rain/'
-    taxi_data = read_taxi_data(taxi_folder)
-    weather_data = read_weather_data(weather_folder)
     merged_data = align_taxi_weather_data(taxi_data, weather_data)
     test_data = merged_data
     grid_size = 0.01
@@ -562,7 +552,7 @@ if __name__ == "__main__":
     aggregated_test_data = aggregated_test_data.sort_values(by=['grid_x', 'grid_y', 'Timestamp'])
     aggregated_test_data['Timestamp'] = pd.to_datetime(aggregated_test_data['Timestamp'])
     unique_timestamps = sorted(aggregated_test_data['Timestamp'].unique())
-    timestamp_to_index = {timestamp: idx for idx, timestamp in enumerate(unique_timestamps)}
+    timestamp_index = {timestamp: idx for idx, timestamp in enumerate(unique_timestamps)}
     movements_test = infer_taxi_movements(aggregated_test_data, grid_size)
 
     aggregated_test_data = aggregated_test_data.sort_values(by='Timestamp')
@@ -572,7 +562,7 @@ if __name__ == "__main__":
 
     # Combine spatial, temporal, and flow-based edges for ST-GCN
     window_size = 5  # Example window size
-    edge_index_combined_test, edge_weights_combined_test = create_grid_graph_temporal(aggregated_test_data, window_size,
+    edge_index_combined_test, edge_weights_combined_test = create_grid_graph_temporal(timestamp_index, aggregated_test_data, window_size,
                                                                                       edge_index_spatial, movements_test)
 
     # Prepare the Data object for ST-GCN
@@ -600,15 +590,9 @@ if __name__ == "__main__":
     latest_prediction = predictions[-1]  # Take the last predicted frame
     grid_info = aggregated_test_data[['grid_x', 'grid_y']].drop_duplicates().reset_index(drop=True)
 
-    prediction_json = [
+    return [
         {"grid_x": int(grid_info.iloc[i]['grid_x']), "grid_y": int(grid_info.iloc[i]['grid_y']),
          "taxi_count":  math.ceil(latest_prediction[i])}
         for i in range(len(grid_info))
     ]
-
-    # Save as JSON file
-    json_output_path = "predicted_taxi_availability.json"
-    with open(json_output_path, "w") as json_file:
-        json.dump(prediction_json, json_file, indent=4)
-
-    print(f"Inference complete. Predictions saved to '{json_output_path}'.")
+    # return True

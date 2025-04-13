@@ -7,8 +7,8 @@ import Apis from '../../../../api'
 import { ApiResponse } from '../../../../types'
 import { TaxiData } from '../../../../types/taxi.ts'
 
-function useTaxiLocationCollection(enabled?: boolean): [Collection<Feature<Geometry>>] {
-  const [locations, setLocations] = useState(new Collection<Feature<Geometry>>())
+function useTaxiLocationCollection(enabled?: boolean): [Collection<Feature<Point>>] {
+  const [locations, setLocations] = useState(new Collection<Feature<Point>>())
   const {data} =  useSWR<ApiResponse<TaxiData>>(enabled && Apis.Taxi.getLocations(), {refreshInterval: 30 * 1000})
 
   useEffect(() => {

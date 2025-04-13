@@ -54,7 +54,6 @@ function useWeatherLayer(map: Map, enabled?: boolean) {
         weight: (feature) => {
           return mapValue(feature.get('data').value, 0, 1, 0, 2)
         },
-        // style: pointStyle,
       })
       map.addLayer(mapLayer.current)
     }

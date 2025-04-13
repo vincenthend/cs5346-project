@@ -9,10 +9,10 @@ import VectorSource from 'ol/source/Vector'
 import { Circle, Fill, Style, Text } from 'ol/style'
 import React, { useEffect, useRef } from 'react'
 import useBoundaryLocationCollection from '../Boundary/useBoundaryLocationCollection.ts'
-import useTaxiLocationCollection from './useTaxiLocationCollection.ts'
+import useDemandCollection from './useDemandCollection.ts'
 
-function useTaxiLocationLayer(map: Map, enabled?: boolean) {
-  const [locations] = useTaxiLocationCollection(enabled)
+function useDemandLayer(map: Map, enabled?: boolean) {
+  const [locations] = useDemandCollection(enabled)
   const [boundaries] = useBoundaryLocationCollection(enabled)
   const mapLayer = useRef<BaseLayer>()
 
@@ -23,7 +23,7 @@ function useTaxiLocationLayer(map: Map, enabled?: boolean) {
         image: new Circle({
           radius: 12,
           fill: new Fill({
-            color: '#FFB121',
+            color: '#FF0000',
           }),
         }),
         text: new Text({
@@ -81,4 +81,4 @@ function useTaxiLocationLayer(map: Map, enabled?: boolean) {
   }, [enabled, enable, disable])
 }
 
-export default useTaxiLocationLayer
+export default useDemandLayer
