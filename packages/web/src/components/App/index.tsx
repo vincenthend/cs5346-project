@@ -4,10 +4,13 @@ import { LayerToggle, LayerType } from '../../types'
 import AreaCard from '../AreaCard'
 import LayerCard from '../LayerCard'
 import VisualizationMap from '../VisualizationMap'
+import { Polygon } from 'ol/geom'
+import { Collection, Feature } from 'ol'
 
 const { Header, Content } = Layout
 
 function AppContainer() {
+  const [areas, setAreas] = useState<Collection<Feature<Polygon>>>(new Collection<Feature<Polygon>>())
   const [selectedArea, setSelectedArea] = useState()
   const [toggle, setToggle] = React.useState<LayerToggle>({ [LayerType.TAXI_LOCATION]: true })
 
@@ -22,11 +25,11 @@ function AppContainer() {
         <Content style={{ background: '#1a1a1a' }}>
           <Row wrap={false}>
             <Col flex={'auto'}>
-              <VisualizationMap toggle={toggle} onSelect={setSelectedArea} />
+              <VisualizationMap toggle={toggle} onSelect={setSelectedArea} onLoad={setAreas} />
             </Col>
             <Col span={4} style={{ padding: '8px' }}>
               <Space direction={'vertical'} style={{width: '100%'}}>
-                <AreaCard feature={selectedArea} />
+                <AreaCard feature={selectedArea} areas={areas} />
                 <LayerCard
                   value={toggle}
                   onChange={(layer, checked) => {

@@ -1,5 +1,5 @@
 import chroma from 'chroma-js'
-import { Feature } from 'ol'
+import { Collection, Feature } from 'ol'
 import { FeatureLike } from 'ol/Feature'
 import { Polygon } from 'ol/geom'
 import { Vector } from 'ol/layer'
@@ -12,12 +12,14 @@ import useBoundaryLocationCollection from '../Boundary/useBoundaryLocationCollec
 import useDemandCollection from './useDemandCollection.ts'
 import useTaxiLocationCollection from './useTaxiLocationCollection.ts'
 
-const scale = chroma.scale(['#FFFFFF05', '#FF000077']).domain([1, 1.5])
+const scaleNeg = chroma.scale(['#FFFFFF05', '#FF000077']).domain([1, 1.5])
+const scalePos = chroma.scale(['#00FF0077', '#FFFFFF05']).domain([0, 1])
 
 function useTaxiLocationLayer(
   map: Map,
   enabled?: boolean,
-  onSelect?: (feature: Feature<Polygon>) => void
+  onSelect?: (feature: Feature<Polygon>) => void,
+  onLoad?: (areas: Collection<Feature<Polygon>>) => void
 ) {
   const [demands] = useDemandCollection(enabled)
   const [locations] = useTaxiLocationCollection(enabled)
@@ -52,7 +54,7 @@ function useTaxiLocationLayer(
           width: 2,
         }),
         fill: new Fill({
-          color: `${isNaN(demandLevel) ? 'transparent' : scale(demandLevel).hex('rgba')}`,
+          color: `${isNaN(demandLevel) ? 'transparent' : demandLevel > 1 ? scaleNeg(demandLevel).hex('rgba') : scalePos(demandLevel).hex('rgba')}`,
         }),
         text: new Text({
           text: `${name}`,
@@ -82,6 +84,8 @@ function useTaxiLocationLayer(
 
         b.setProperties({ demand_count, taxi_count })
       })
+
+      onLoad(boundaries)
 
       mapLayer.current = new Vector({
         source: new VectorSource({ features: boundaries }),
