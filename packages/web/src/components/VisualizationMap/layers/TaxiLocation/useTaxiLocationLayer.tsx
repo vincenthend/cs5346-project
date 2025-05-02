@@ -64,6 +64,7 @@ function useTaxiLocationLayer(
       })
     }
 
+    const dataJson = []
     if (locations && boundaries) {
       boundaries.forEach((b) => {
         const polygonGeometry = b.getGeometry()!
@@ -83,7 +84,9 @@ function useTaxiLocationLayer(
         })
 
         b.setProperties({ demand_count, taxi_count })
+          dataJson.push([b.get('Description'), demand_count, taxi_count])
       })
+      console.log(JSON.stringify(dataJson))
 
       onLoad(boundaries)
 

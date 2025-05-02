@@ -1,0 +1,643 @@
+{
+  "data": [
+    {
+      "device_id": "S224",
+      "id": "S224",
+      "location": [
+        103.98409,
+        1.34392
+      ],
+      "name": "Airport Boulevard",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.6198085235254636
+    },
+    {
+      "device_id": "S77",
+      "id": "S77",
+      "location": [
+        103.8125,
+        1.2937
+      ],
+      "name": "Alexandra Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.9874829012023967
+    },
+    {
+      "device_id": "S216",
+      "id": "S216",
+      "location": [
+        103.85335,
+        1.36019
+      ],
+      "name": "Ang Mo Kio Avenue 10",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.697707342399023
+    },
+    {
+      "device_id": "S109",
+      "id": "S109",
+      "location": [
+        103.8492,
+        1.3764
+      ],
+      "name": "Ang Mo Kio Avenue 5",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.24220223902025761
+    },
+    {
+      "device_id": "S217",
+      "id": "S217",
+      "location": [
+        103.85526,
+        1.35041
+      ],
+      "name": "Bishan Street 13",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.8290163476972506
+    },
+    {
+      "device_id": "S64",
+      "id": "S64",
+      "location": [
+        103.7603,
+        1.3824
+      ],
+      "name": "Bukit Panjang Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.6102584104210882
+    },
+    {
+      "device_id": "S90",
+      "id": "S90",
+      "location": [
+        103.8191,
+        1.3191
+      ],
+      "name": "Bukit Timah Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.9563992582524622
+    },
+    {
+      "device_id": "S208",
+      "id": "S208",
+      "location": [
+        104.00317,
+        1.3136
+      ],
+      "name": "Changi East Close",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.5828660867513777
+    },
+    {
+      "device_id": "S201",
+      "id": "S201",
+      "location": [
+        103.76714,
+        1.32311
+      ],
+      "name": "Clementi Park",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.2366997808398661
+    },
+    {
+      "device_id": "S50",
+      "id": "S50",
+      "location": [
+        103.7768,
+        1.3337
+      ],
+      "name": "Clementi Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.8795934958977707
+    },
+    {
+      "device_id": "S220",
+      "id": "S220",
+      "location": [
+        103.89797,
+        1.38666
+      ],
+      "name": "Compassvale Lane",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.12095716299309234
+    },
+    {
+      "device_id": "S213",
+      "id": "S213",
+      "location": [
+        103.8097,
+        1.32427
+      ],
+      "name": "Coronation Walk",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.7391024452877255
+    },
+    {
+      "device_id": "S107",
+      "id": "S107",
+      "location": [
+        103.9625,
+        1.3135
+      ],
+      "name": "East Coast Parkway",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.3634054109439886
+    },
+    {
+      "device_id": "S215",
+      "id": "S215",
+      "location": [
+        103.88899,
+        1.32785
+      ],
+      "name": "Geylang East Central",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.020791281171651965
+    },
+    {
+      "device_id": "S222",
+      "id": "S222",
+      "location": [
+        103.82364,
+        1.28987
+      ],
+      "name": "Henderson Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.7455493889358579
+    },
+    {
+      "device_id": "S221",
+      "id": "S221",
+      "location": [
+        103.89088,
+        1.35691
+      ],
+      "name": "Hougang Avenue 1",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.6638503577514022
+    },
+    {
+      "device_id": "S33",
+      "id": "S33",
+      "location": [
+        103.71,
+        1.3081
+      ],
+      "name": "Jurong Pier Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.198984413228107
+    },
+    {
+      "device_id": "S229",
+      "id": "S229",
+      "location": [
+        103.72195,
+        1.35167
+      ],
+      "name": "Jurong West Street 42",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.16145764246731797
+    },
+    {
+      "device_id": "S228",
+      "id": "S228",
+      "location": [
+        103.70073,
+        1.34703
+      ],
+      "name": "Jurong West Street 73",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.8210020734556951
+    },
+    {
+      "device_id": "S71",
+      "id": "S71",
+      "location": [
+        103.7815,
+        1.2923
+      ],
+      "name": "Kent Ridge Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.426671256392151
+    },
+    {
+      "device_id": "S43",
+      "id": "S43",
+      "location": [
+        103.8878,
+        1.3399
+      ],
+      "name": "Kim Chuan Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.2661740767071503
+    },
+    {
+      "device_id": "S211",
+      "id": "S211",
+      "location": [
+        103.75711,
+        1.42918
+      ],
+      "name": "Kranji Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.4079044003716418
+    },
+    {
+      "device_id": "S66",
+      "id": "S66",
+      "location": [
+        103.7363,
+        1.4387
+      ],
+      "name": "Kranji Way",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.37236949237455674
+    },
+    {
+      "device_id": "S112",
+      "id": "S112",
+      "location": [
+        103.70131,
+        1.43854
+      ],
+      "name": "Lim Chu Kang Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.7498959959930442
+    },
+    {
+      "device_id": "S07",
+      "id": "S07",
+      "location": [
+        103.8334,
+        1.3415
+      ],
+      "name": "Lornie Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.8839774990204426
+    },
+    {
+      "device_id": "S226",
+      "id": "S226",
+      "location": [
+        103.80389,
+        1.27472
+      ],
+      "name": "Malan Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.3636691252124421
+    },
+    {
+      "device_id": "S40",
+      "id": "S40",
+      "location": [
+        103.78962,
+        1.4044
+      ],
+      "name": "Mandai Lake Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.22052295792233623
+    },
+    {
+      "device_id": "S223",
+      "id": "S223",
+      "location": [
+        103.80264,
+        1.29984
+      ],
+      "name": "Margaret Drive",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.4185274327298506
+    },
+    {
+      "device_id": "S113",
+      "id": "S113",
+      "location": [
+        103.9104,
+        1.30648
+      ],
+      "name": "Marine Parade Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.9207590881019043
+    },
+    {
+      "device_id": "S44",
+      "id": "S44",
+      "location": [
+        103.68166,
+        1.34583
+      ],
+      "name": "Nanyang Avenue",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.5935120472211762
+    },
+    {
+      "device_id": "S119",
+      "id": "S119",
+      "location": [
+        103.8666,
+        1.30105
+      ],
+      "name": "Nicoll Highway",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.9399489748289703
+    },
+    {
+      "device_id": "S121",
+      "id": "S121",
+      "location": [
+        103.72244,
+        1.37288
+      ],
+      "name": "Old Choa Chu Kang Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.2784354431443655
+    },
+    {
+      "device_id": "S203",
+      "id": "S203",
+      "location": [
+        103.7702,
+        1.29164
+      ],
+      "name": "Pasir Panjang",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.4227852885325346
+    },
+    {
+      "device_id": "S29",
+      "id": "S29",
+      "location": [
+        103.935,
+        1.387
+      ],
+      "name": "Pasir Ris Drive 12",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.4639266120429064
+    },
+    {
+      "device_id": "S94",
+      "id": "S94",
+      "location": [
+        103.9528,
+        1.3662
+      ],
+      "name": "Pasir Ris Street 51",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.0674815307003539
+    },
+    {
+      "device_id": "S78",
+      "id": "S78",
+      "location": [
+        103.89067,
+        1.30703
+      ],
+      "name": "Poole Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.25715899795654085
+    },
+    {
+      "device_id": "S106",
+      "id": "S106",
+      "location": [
+        103.9673,
+        1.4168
+      ],
+      "name": "Pulau Ubin",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.6377699855238799
+    },
+    {
+      "device_id": "S81",
+      "id": "S81",
+      "location": [
+        103.9092,
+        1.4029
+      ],
+      "name": "Punggol Central",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.1347997430957496
+    },
+    {
+      "device_id": "S111",
+      "id": "S111",
+      "location": [
+        103.8365,
+        1.31055
+      ],
+      "name": "Scotts Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.9641348920561532
+    },
+    {
+      "device_id": "S900",
+      "id": "S900",
+      "location": [
+        103.86922,
+        1.41284
+      ],
+      "name": "Seletar Aerospace View",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.7197018622522775
+    },
+    {
+      "device_id": "S102",
+      "id": "S102",
+      "location": [
+        103.768,
+        1.189
+      ],
+      "name": "Semakau Landfill",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.7538494325370118
+    },
+    {
+      "device_id": "S60",
+      "id": "S60",
+      "location": [
+        103.8279,
+        1.25
+      ],
+      "name": "Sentosa",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.2480451049053921
+    },
+    {
+      "device_id": "S84",
+      "id": "S84",
+      "location": [
+        103.9444,
+        1.3437
+      ],
+      "name": "Simei Avenue",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.2924336208962396
+    },
+    {
+      "device_id": "S79",
+      "id": "S79",
+      "location": [
+        103.8372,
+        1.3004
+      ],
+      "name": "Somerset Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.49526267439137117
+    },
+    {
+      "device_id": "S92",
+      "id": "S92",
+      "location": [
+        103.7886,
+        1.2841
+      ],
+      "name": "South Buona Vista Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.4669282176670353
+    },
+    {
+      "device_id": "S214",
+      "id": "S214",
+      "location": [
+        103.88289,
+        1.29911
+      ],
+      "name": "Tanjong Rhu",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.31405627927337043
+    },
+    {
+      "device_id": "S88",
+      "id": "S88",
+      "location": [
+        103.8482,
+        1.3427
+      ],
+      "name": "Toa Payoh North",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.23415517811713782
+    },
+    {
+      "device_id": "S123",
+      "id": "S123",
+      "location": [
+        103.8577,
+        1.3214
+      ],
+      "name": "Towner Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.5441838755345512
+    },
+    {
+      "device_id": "S115",
+      "id": "S115",
+      "location": [
+        103.61843,
+        1.29377
+      ],
+      "name": "Tuas South Avenue 3",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.5378749915046711
+    },
+    {
+      "device_id": "S24",
+      "id": "S24",
+      "location": [
+        103.9826,
+        1.3678
+      ],
+      "name": "Upper Changi Road North",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.11405233264906678
+    },
+    {
+      "device_id": "S69",
+      "id": "S69",
+      "location": [
+        103.805,
+        1.37
+      ],
+      "name": "Upper Peirce Reservoir Park",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.29874950602270633
+    },
+    {
+      "device_id": "S08",
+      "id": "S08",
+      "location": [
+        103.8271,
+        1.3701
+      ],
+      "name": "Upper Thomson Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.44456753899060375
+    },
+    {
+      "device_id": "S230",
+      "id": "S230",
+      "location": [
+        103.76444,
+        1.30167
+      ],
+      "name": "West Coast Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.47779261506818516
+    },
+    {
+      "device_id": "S104",
+      "id": "S104",
+      "location": [
+        103.78538,
+        1.44387
+      ],
+      "name": "Woodlands Avenue 9",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.3854138000508397
+    },
+    {
+      "device_id": "S210",
+      "id": "S210",
+      "location": [
+        103.76904,
+        1.44003
+      ],
+      "name": "Woodlands Centre",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.475124715205302
+    },
+    {
+      "device_id": "S227",
+      "id": "S227",
+      "location": [
+        103.80389,
+        1.43944
+      ],
+      "name": "Woodlands Drive 62",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.7963046501957277
+    },
+    {
+      "device_id": "S219",
+      "id": "S219",
+      "location": [
+        103.87643,
+        1.37999
+      ],
+      "name": "Yio Chu Kang Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.09388403568652204
+    },
+    {
+      "device_id": "S209",
+      "id": "S209",
+      "location": [
+        103.84472,
+        1.42111
+      ],
+      "name": "Yishun Ring Road",
+      "timestamp": "2025-05-02T21:50:00+08:00",
+      "value": 0.42721526488899064
+    }
+  ],
+  "success": true
+}

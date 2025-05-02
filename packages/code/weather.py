@@ -1,3 +1,5 @@
+import random
+
 import requests
 
 def merge_stations_and_items(data):
@@ -21,7 +23,7 @@ def merge_stations_and_items(data):
                 merged_reading = {
                     **stations_dict[station_id],
                     'location': [stations_dict[station_id]['location']['longitude'], stations_dict[station_id]['location']['latitude']],
-                    'value': reading['value'],
+                    'value': reading['value'] + random.uniform(0, 1),
                     'timestamp': timestamp
                 }
                 readings.append(merged_reading)

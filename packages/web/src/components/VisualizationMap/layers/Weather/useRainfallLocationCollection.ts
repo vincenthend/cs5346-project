@@ -11,6 +11,7 @@ function useRainfallLocationCollection(enabled?: boolean): [Collection<Feature<G
   const [locations, setLocations] = useState(new Collection<Feature<Geometry>>())
   const { data } = useSWR<ApiResponse<WeatherData[]>>(enabled && Apis.Weather.getRainfallLocations(), {
     refreshInterval: 5 * 60 * 1000,
+    fetcher: () => import('../../../../data/get_rainfall_locations.json').then((res) => res),
   })
 
   useEffect(() => {

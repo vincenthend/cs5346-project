@@ -9,6 +9,7 @@ import { ApiResponse } from '../../../../types'
 function useBoundaryLocationCollection(enabled?: boolean): [Collection<Feature<Polygon>>] {
   const [locations, setLocations] = useState(new Collection<Feature<Polygon>>())
   const { data } = useSWR<ApiResponse<any>>(enabled && Apis.Boundary.getBoundary(), {
+    fetcher: () => import('../../../../data/get_boundary_area.json').then((res) => res),
     revalidateOnFocus: false,
   })
 
