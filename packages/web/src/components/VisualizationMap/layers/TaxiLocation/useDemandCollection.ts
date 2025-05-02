@@ -18,6 +18,7 @@ function useDemandCollection(enabled?: boolean): [Collection<Feature<Point>>] {
     >
   >(enabled && Apis.Demand.getDemand(), {
     revalidateOnFocus: false,
+    fetcher: () => import('../../../../data/get_demand.json').then((res) => res),
   })
 
   useEffect(() => {
