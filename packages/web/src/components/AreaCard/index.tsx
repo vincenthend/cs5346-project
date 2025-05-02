@@ -51,21 +51,17 @@ function AreaCard({ feature, areas }: { feature: Feature<MultiPolygon>, areas: C
     return top3Areas
   }, [areas, feature])
 
-  
+
   if (!feature) return null
   return (
     <Space direction={'vertical'}>
     <Card size="small" title={'Operations'}>
       {/*{feature && <pre>{JSON.stringify(feature)}</pre>}*/}
       <Space direction={'vertical'}>
+        <Typography.Title level={4}>{feature.get('Description')}</Typography.Title>
         <Descriptions
           column={2}
           items={[
-            {
-              label: 'Selected Area',
-              children: feature.get('Description'),
-              span: 2,
-            },
             {
               label: 'Demand',
               children: feature.get('demand_count'),
@@ -77,12 +73,12 @@ function AreaCard({ feature, areas }: { feature: Feature<MultiPolygon>, areas: C
           ]}
         />
         <Progress percent={100} success={{percent: (feature.get('taxi_count')) / feature.get('demand_count') * 100}} status={'exception'} showInfo={false} />
-        
+
       </Space>
     </Card>
-    {feature.get('taxi_count') < feature.get('demand_count') && 
+    {feature.get('taxi_count') < feature.get('demand_count') &&
     (<Card title={'Reroute Taxi'} size={'small'}>
-        
+
         <div>
           <Typography.Text>Recommended Reroute</Typography.Text>
           <div style={{paddingLeft: 16}}>
