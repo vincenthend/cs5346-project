@@ -17,6 +17,11 @@ function AppContainer() {
   return (
     <>
       <Layout>
+        <Header style={{ display: 'flex', alignItems: 'center', backgroundColor: '#000f1e', justifyContent: 'center' }}>
+          <Typography.Text style={{ color: 'white', textAlign: 'center' }}>
+            The data in this version of visualization is not using the LIVE version. The source code for this visualization is available <Typography.Link href={"https://github.com/vincenthend/cs5346-project"}>here</Typography.Link>
+          </Typography.Text>
+        </Header>
         <Header style={{ display: 'flex', alignItems: 'center' }}>
           <Typography.Text style={{ color: 'white', fontSize: '20px', fontWeight: 500 }}>
             Taxi Board
